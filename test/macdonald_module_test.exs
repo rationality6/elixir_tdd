@@ -25,7 +25,7 @@ defmodule MacdonaldModuleTest do
         }
       ]
 
-      assert MacdonaldModule.order_price(ordered_menu, menu_data) == 4900
+      assert MacdonaldModule.get_total_price(ordered_menu, menu_data) == 4900
     end
 
     test "콜라 프라이 주문" do
@@ -50,7 +50,7 @@ defmodule MacdonaldModuleTest do
         }
       ]
 
-      assert MacdonaldModule.order_price(ordered_menu, menu_data) == 2500
+      assert MacdonaldModule.get_total_price(ordered_menu, menu_data) == 2500
     end
   end
 end
